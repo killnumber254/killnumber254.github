@@ -1,3 +1,3 @@
 <?php
-echo "object" .$_POST['objOne'];
+echo "Hello World";
 ?>
