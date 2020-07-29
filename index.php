@@ -1,11 +1,11 @@
 <?php
  
- if($_POST['nikNameValue']){
-   $nik = $_POST['nikNameValue'];
+ if(isset($_POST['nikNameValue'])){
+   echo <p>$_POST['nikNameValue']</p>;
  }
  
- $text = $_POST['text'];
+
  
- mail("$nik", '$text');
- echo '<p>Сообщение отправлено</p>'
+
+
  ?>
