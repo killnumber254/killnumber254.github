@@ -50,13 +50,13 @@ if(nikNameValue) {
         const url = "form.php"
     try{
       const response =   fetch(url, {
-        method: "GET",
+        method: "POST",
         body: JSON.stringify(objOne),
         headers:{ "Content-type": "application/json",
         }
       });
-      const json =   response.json;
-      console.log("Успех", JSON.stringify(json));
+      const nik = JSON.stringify(objOne);
+      console.log("Успех", nik);
       
     }
     catch(error){
