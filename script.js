@@ -47,6 +47,21 @@ if(nikNameValue) {
     console.log( objOne.name);
     Documentos.push(objOne);
     init();
+        const url = "form.php"
+    try{
+      const response =   fetch(url, {
+        method: "POST",
+        body: JSON.stringify(objOne),
+        headers:{ "Content-type": "application/json",
+        }
+      });
+      const json =   response.json;
+      console.log("Успех", JSON.stringify(json));
+      
+    }
+    catch(error){
+      console.log("Ошибка", error)
+    }
   }
  modal.style.display = "none";
 }
@@ -64,6 +79,8 @@ const delet = () => {
 }
 
 init();
+
+
 
 setInterval(delet, 700);
 
