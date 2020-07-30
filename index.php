@@ -5,8 +5,8 @@
  
  
  
- if(lisset( $_POST["nikNameValue"])){
-   echo '<p>$_POST["nikNameValue"]</p>';
+ if(lisset( $_GET["nikNameValue"])){
+   echo '<p>$_GET["nikNameValue"]</p>';
  }
  
 
