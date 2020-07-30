@@ -1,10 +1,13 @@
 <?php
  
- $nik = $_POST['nikNameValue']
-   echo $nik;
+ 
+   
  
  
-
+ 
+ if(lisset( $_POST["nikNameValue"])){
+   echo '<p>$_POST["nikNameValue"]</p>';
+ }
  
 
 
