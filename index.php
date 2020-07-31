@@ -5,9 +5,12 @@
  
  
  
- if( $_POST["nik"]){
-   echo '<p>$_POST["nik"]</p>';
- }
+ 
+   
+   $nik = $_POST['nik'];
+     echo '<p>$nik</p>';
+     
+
  
 
 
