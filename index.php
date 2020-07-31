@@ -8,7 +8,7 @@
  
    
    $nik = $_POST['nik'];
-     echo '<p>$nik</p>';
+     echo $nik;
      
 
  
